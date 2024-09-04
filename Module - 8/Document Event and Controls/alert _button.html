@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Classes and Alert</title>
+    <style>
+        .my-class {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="my-class">Hiiiii</div>
+    <div class="my-class">Good</div>
+    <div class="my-class">Morning</div>
+    <button id="showAlertButton">Show Alerts</button>
+
+    <script>
+        document.getElementById('showAlertButton').addEventListener('click', function() {
+            // Select all elements with the class 'my-class'
+            const elements = document.querySelectorAll('.my-class');
+            
+            // Loop over each element and show an alert with its text content
+            elements.forEach((element) => {
+                alert(element.textContent);
+            });
+        });
+    </script>
+</body>
+</html>
