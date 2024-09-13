@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple background</title>
+    <!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .section {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+        }
+
+        .col-55 {
+            background: rgb(29, 28, 28);
+            color: white;
+            width: 55%;
+            text-align: right;
+            padding: 50px 0px;
+            z-index: 1;
+        }
+        span{
+            width: 3%;
+            padding: 3px;
+            margin: 0px 30px;
+            background-color: rgb(193, 63, 63);
+        }
+
+       .detail , .heading{
+        margin: 30px 40px;
+        padding: 0px 20px;
+       }
+
+        .col-45 {
+            background: url(../assignment_module-4/one\ side\ img.jpg);
+            width: 45%;
+            z-index: -1;
+        }
+
+        .services {
+            display: flex;
+        }
+        h2{
+            color: rgb(193, 63, 63);;
+            margin-bottom: 3px;
+        }
+
+        i {
+            background-color: white;
+            color: rgb(193, 63, 63);;
+            border-radius: 50%;
+            font-size: 50px;
+            padding: 5px;
+            margin-top: 40px;
+            margin-right: -20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="section">
+            <div class="col-55">
+                <div class="heading">
+                    <h1>OUR SERVICES<span></span></h1>
+                </div>
+                <div class="services">
+                    <div class="detail">
+                        <h2>WEB DESIGN</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+                            been the industry's standard dummy text over.</p>
+                    </div>
+                    <div><i class="fa-solid fa-laptop" style="color: rgb(193, 63, 63);"></i></div>
+                </div>
+                <div class="services">
+                    <div class="detail">
+                        <h2>PRINT DESIGN</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ig sum has been the industry's standard dummy text ever.</p>
+                    </div>
+                    <div><i class="fa-solid fa-database" style="color: rgb(193, 63, 63);"></i></div>
+                </div>
+                <div class="services">
+                    <div class="detail">
+                        <h2>PHOTOGRAPHY</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+                            been the industry's standard dummy text over.</p>
+                    </div>
+                    <div><i class="fa-solid fa-camera" style="color: rgb(193, 63, 63);"></i></div>
+                </div>
+            </div>
+            <div class="col-45"></div>
+        </div>
+    </div>
+</body>
+
+</html>

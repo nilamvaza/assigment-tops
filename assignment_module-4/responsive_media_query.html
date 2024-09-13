@@ -1,0 +1,606 @@
+`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsiv media query</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <style>
+        .div1{
+            width: 1100px;
+            height: 1400px;
+            border: 2px solid black;
+            margin: 100px;
+            margin-top: 20px;
+            padding-top: 5px;
+            padding-bottom: 3px;
+            padding-left: 10px;
+            font-size: 25px;
+            color: rgb(169, 162, 162);
+            background-color: gray;
+            
+        }
+        .div2{
+            width: 1095px;
+            height: 1370px;
+            border: 2px solid rgb(255, 255, 255);
+            background-color: rgb(255, 255, 255);
+        }
+        .p1{
+            color: black;
+            margin: 20px;
+            padding-left: 40px;
+            
+        }
+        .form{
+            padding-left: 320px;
+            margin: -50px;
+            word-spacing: 20px;
+            
+        }
+        .h3{
+            padding-left: 720px; 
+            color: black;
+            margin: 25px;
+            font-size: 23px;
+        }
+        .box{
+            margin-left: 820px; 
+            margin-top: -53px;
+            font-size: 20px;
+            height: 23px;
+            width: 130px;
+            border: 2px solid rgb(111, 109, 109);
+            color: black;
+            background-color: rgb(121, 113, 113);
+        }
+        .button2{
+            width: 100px;
+            height: 30px;
+            border: 2px solid rgb(75, 235, 57);
+            background-color: rgb(75, 235, 57);
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            margin-left: 400px;
+            margin-top: 50px;
+           }
+           .p3{
+            margin-left: 545px;
+            margin-top:-27px ;
+            color: black;
+           }
+           .h1{
+            color: black;
+            font-size: 50px;
+            margin-left: 370px;
+           }
+           .h2{
+            color: black;
+            font-size: 45px;
+            margin-left: 320px;
+            margin-top: -40px;
+           }
+           #p1{
+            color: black;
+            margin-left: 370px;
+            margin-top: -20px;
+            font-size: 20px;
+           }
+           #p2{
+            color: black;
+            margin-left: 400px;
+            margin-top: -20px;
+            font-size: 20px;
+           }
+           .btn1{
+            background-color: rgb(241, 235, 235);
+            border-color: rgb(255, 255, 255);
+            box-shadow: 0px 0px 5px 2px rgb(202, 185, 185);
+            margin-left: 400px;
+            height: 30px;
+            width: 200px;
+           }
+           .btn2{
+            height: 30px;
+            width: 100px;
+            background-color: rgb(87, 80, 182);
+            color: white;
+           }
+           .grid{
+            border: 2px solid rgb(255, 255, 255);
+            width: 900px;
+            height:700px ;
+            margin-left: 90px;
+            margin-top: 30px;
+            box-shadow: 0px 0px 30px 1px rgb(226, 218, 218);
+           }
+           .grid2{
+            width: 60px;
+            height:700px;
+            background-color: rgb(0, 0, 0);
+           }
+           .parent2{
+            display: grid;
+            grid-template-columns:250px 250px 250px ;
+            grid-template-rows: 150px 390px  ;
+            height: 300px;
+            width: 300px;
+            column-gap: 20px;
+            row-gap: 20px;
+            padding-left: 80px;
+            margin-top: -190px;
+        }
+        .box2{
+            background-color: rgb(255, 255, 255);
+            border:3px solid rgb(246, 240, 240);
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 2px rgb(228, 221, 221);
+            
+        }
+        #box01{
+            grid-row: 1/2;
+            grid-column:1/2 ;
+            
+        }
+        #box03{
+            grid-row: 1/2;
+            grid-column: 3/4;
+        }
+        #box04{
+            grid-row: 2/3;
+            grid-column: 1/2;
+        }
+        #box05{
+            grid-row: 2/3;
+            grid-column: 2/4;
+            
+        }
+        #Overview{
+            color: black;
+            margin-left: 100px;
+            margin-bottom: -50px;
+        }
+        .hours{
+            color: black;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .ptext{
+            color: black;
+            font-size: 20px;
+            text-align: center;
+            margin-top: -23px;
+        }
+        .arrow{
+            color: rgb(248, 115, 115);
+            background-color: rgb(244, 205, 205);
+            border: 2px solid rgb(244, 205, 205);
+            width: 90px;
+            height: 30px;
+            margin-left: 55px;
+        }
+        .arrow2{
+            color: rgb(0, 248, 112);
+            background-color: rgb(202, 255, 208);
+            border: 2px solid rgb(202, 255, 208);
+            width: 90px;
+            height: 30px;
+            margin-left: 55px;
+        }
+        .Projects{
+            color: black;
+            font-size: 20px;
+        }
+        .Export{
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            width: 90px;
+            height: 30px;
+            margin:-45px;
+            margin-left: 400px;
+            
+        }
+        .parent3{
+            display: grid;
+            grid-template-columns:50px 50px 50px ;
+            grid-template-rows: 20px 20px 20px ;
+            height: 300px;
+            width: 300px;
+            
+        }
+        .box3{
+            background-color: rgb(215, 119, 193);
+            border:3px solid black;
+            border-radius: 5px;
+        }
+        #box1{
+            grid-row: 1/2;
+            grid-column:1/2;
+            width: 20px;
+            height: 90px;
+            margin-top: -190px;
+            border-color: rgb(224, 226, 228);
+            background-color: rgb(224, 226, 228);
+            margin-left: 18px;
+        }
+        #box2{
+            grid-row: 1/2;
+            grid-column: 2/3;
+            width: 20px;
+            height: 140px;
+            margin-top: -245px;
+            margin-left: 18px;
+            border-color: rgb(224, 226, 228);
+            background-color: rgb(224, 226, 228);
+        }
+        #box3{
+            grid-row: 1/2;
+            grid-column: 3/4;
+            width: 20px;
+            height: 250px;
+            margin-top: -355px;
+            margin-left: 18px;
+            border-color: rgb(134, 247, 134);
+            background-color: rgb(134, 247, 134);
+        }
+        #box4{
+            grid-row: 1/2;
+            grid-column: 4/5;
+            width: 20px;
+            height: 120px;
+            margin-top: -227px;
+            margin-left: 18px;
+            border-color: rgb(224, 226, 228);
+            background-color: rgb(224, 226, 228);
+        }
+        #box5{
+            grid-row: 1/2;
+            grid-column: 5/6;
+            width: 20px;
+            height: 200px;
+            margin-top: -305px;
+            margin-left: -35px;
+            border-color: rgb(224, 226, 228);
+            background-color: rgb(224, 226, 228);
+        }
+
+        .parent4{
+            display: grid;
+            grid-template-columns:50px 50px 50px 50px ;
+            grid-template-rows: 20px 20px 20px 20px ;
+            height: 300px;
+            width: 300px;
+            
+        }
+        .box4{
+            background-color: rgb(215, 119, 193);
+            border:3px solid black;
+            border-radius: 5px;
+        }
+        #box11{
+            grid-row: 1/2;
+            grid-column:1/2;
+            width: 40px;
+            height: 290px;
+            background-color: rgb(252, 254, 255);
+            margin-left: 20px;
+            border-color: beige;
+            
+        }
+        #box12{
+            grid-row: 1/2;
+            grid-column: 2/3;
+            width: 40px;
+            height: 124px;
+            margin-top: 167px;
+            margin-left: 50px;
+            border-color: rgb(103, 103, 249);
+            background-color: rgb(103, 103, 249);
+        }
+        #box13{
+            grid-row: 1/2;
+            grid-column: 3/4;
+            width: 40px;
+            height: 180px;
+            margin-top: 110px;
+            margin-left: 80px;
+            border-color:rgb(255, 87, 112);
+            background-color: rgb(255, 87, 112);
+
+        }
+        #box14{
+            grid-row: 1/2;
+            grid-column: 4/5;
+            width: 40px;
+            height: 100px;
+            margin-top: 190px;
+            margin-left: 110px;
+            border-color:rgb(248, 228, 49);
+            background-color: rgb(248, 228, 49);
+        }
+        #box15{
+            grid-row: 1/2;
+            grid-column: 5/6;
+            width: 40px;
+            height: 70px;
+            margin-top: 215px;
+            margin-left: 140px;
+            border-color: rgb(255, 155, 54);
+            background-color: rgb(255, 155, 54);
+        }
+        #box16{
+            grid-row: 1/2;
+            grid-column: 6/7;
+            width: 40px;
+            height: 50px;
+            margin-top: 233px;
+            margin-left: 35px;
+            border-color: rgb(202, 95, 95);
+            background-color: rgb(202, 95, 95);
+        }
+        .one{
+            color: black;
+        }
+        .month1{
+            margin-top: 120px;
+            color: black;
+        }
+        .month2{
+            margin-top: 180px;
+            color: black;
+        }
+        .month3{
+            margin-top: 100px;
+            color: black;
+        }
+        .month4{
+            margin-top: 70px;
+            color: black;
+        }
+        .month5{
+            margin-top: 50px;
+            color: black;
+        }
+        .month11{
+            margin-top: 95px;
+            color: black;
+            font-size: 20px;
+            margin-left: -8px;
+        }
+        .month22{
+            margin-top: 150px;
+            color: black;
+            font-size: 20px;
+            margin-left: -8px;
+        }
+        .month33{
+            margin-top: 260px;
+            color: black;
+            font-size: 20px;
+            margin-left: -8px;
+        }
+        .month44{
+            margin-top: 130px;
+            color: black;
+            font-size: 20px;
+            margin-left: -8px;
+        }
+        .month55{
+            margin-top: 210px;
+            color: black;
+            font-size: 20px;
+            margin-left: -8px;
+        }
+        .month111{
+            color: black;
+            margin: 190px;
+            margin-left: 15px;
+        }
+        .month222{
+            color: black;
+            margin-top: -230px;
+            margin-left: 45px;
+        }
+        .month333{
+            color: black;
+            margin-top: -335px;
+            margin-left: -1px;
+        }
+        .month444{
+            color: black;
+            margin-top: -216px;
+            margin-left: -1px;
+        }
+        .month555{
+            color: black;
+            margin-top: -285px;
+            margin-left: -1px;
+        }
+        .trusted{
+            color: black;
+            text-align: center;
+            font-size: 15px;
+            margin-top: 70px;
+        }
+        .google{
+            height: 30px;
+            width: 100px;
+            
+        }
+        .airbnb{
+            height: 75px;
+            width: 100px;
+            margin-bottom: -20px;
+            margin-left: 50px;
+        }
+        .facebook{
+            height: 75px;
+            width: 100px;
+            margin-left: 60px;
+            margin-bottom: -20px;
+        }
+        .hubspot{
+            height: 70px;
+            width: 100px;
+            margin-left: 60px;
+            margin-bottom: -20px;
+        }
+        .slack{
+            height: 70px;
+            width: 100px;
+            margin-left: 60px;
+            margin-bottom: -20px;
+        }
+        .girl{
+            height: 40px;
+            width: 40px;
+            margin-left: 10px;
+            margin-top: 10px;
+            border-top-left-radius: 70px;
+            border-top-right-radius: 70px;
+            border-bottom-left-radius: 70px;
+            border-bottom-right-radius: 70px;
+        }
+        #home{
+            margin-top: 30px;
+            margin-left: 15px;
+        }
+        #sim{
+            margin-top: 30px;
+            margin-left: 17px;
+        }
+        #setting{
+            margin-top: 30px;
+            margin-left: 15px;
+        }
+        #user{
+            margin-top: 30px;
+            margin-left: 15px;
+        }
+        #quchanmark{
+            height: 20px;
+            width: 20px;
+            margin-left: 20px;
+            margin-top: 270px;
+            border-top-left-radius: 70px;
+            border-top-right-radius: 70px;
+            border-bottom-left-radius: 70px;
+            border-bottom-right-radius: 70px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>Desktop - web</h1>
+    <div class="div1">
+        Landing page
+        <div class="div2">
+           <h3 class="p1">manage</h3>
+           <form class="form" >
+            <select name="subject" id="subject">
+              <option value="" selected="selected">how it works</option>
+            </select>
+            <select name="subject" id="subject">
+                <option value="" selected="selected">product</option>
+              </select>
+              <select name="subject" id="subject">
+                <option value="" selected="selected">pricing</option>
+              </select>
+              <select name="subject" id="subject">
+                <option value="" selected="selected">resources</option>
+              </select>
+            </form>
+            <h3 class="h3">Log in</h3>
+            <div class="box">Get started free</div>
+            <button class="button2">Buy now</button>
+            <p class="p3">hello hhjiko</p>
+            <h2 class="h1">Manage the team </h2>
+            <h2 class="h2">everyone wants to be on</h2>
+            <p id="p1">Id culpa iusto enim facere voluptatum a rerum </p>
+             <p id="p2">delectus ut obcaecati quasi officia et.</p>
+             <button class="btn1">name@yourcompany.com</button>
+             <button class="btn2">try it free</button>
+             <div class="grid">
+                <p id="Overview">Overview</p>
+                <div class="grid2">
+                    <img src="../assignment_module-4/girl-image.png" class="girl">
+                    <i class="fa-solid fa-house" style="color: #ffffff;" id="home"></i>
+                    <i class="fa-solid fa-sim-card" style="color: #696969;" id="sim"></i>
+                    <i class="fa-solid fa-user-group" style="color: #696969;" id="user"></i>
+                    <i class="fa-solid fa-gear" style="color: #696969;" id="setting"></i>
+              <div class="parent2">
+                <div class="box2" id="box01">
+                    <h1 class="hours">987.654</h1>
+                    <p class="ptext">Hours on projects</p>
+                    <button class="arrow">↘+1.23%</button>
+                </div>
+                <div class="box2" id="box02">
+                    <h1 class="hours">987.654</h1>
+                    <p class="ptext">Now project launched</p>
+                    <button class="arrow2">↗+1.23%</button>
+                </div>
+                <div class="box2" id="box03">
+                    <h1 class="hours">987.654</h1>
+                    <p class="ptext">Company teams</p>
+                    <button class="arrow2">↗+2.23%</button>
+                </div>
+                <div class="box2" id="box04">
+                    <h3 class="Projects">Launched Projects</h3>
+                    <p class="month111">12</p>
+                    
+                    <div class="parent3">
+                        <div class="box3" id="box1">
+                            <p class="month11">jan</p>
+                            <p class="month222">34
+                            </div>
+                        <div class="box3" id="box2">
+                            <p class="month22">feb</p>
+                            </div>
+                        <div class="box3" id="box3">
+                            <p class="month33">mar</p>
+                            <p class="month333">96</p></div>
+                        <div class="box3" id="box4">
+                            <p class="month44">apr</p>
+                            <p class="month444">26</p></div>
+                        <div class="box3" id="box5">
+                            <p class="month55">may</p>
+                            <p class="month555">62</p></div>                      
+                    </div> 
+                </div>
+                <div class="box2" id="box05">
+                    <h3 class="Projects">Hours Works</h3>
+                    <button class="Export">Export</button>
+                    <div class="parent4">
+                        <div class="box4" id="box11">
+                            <p class="one">400</p>
+                            <p class="one">300</p>
+                            <p class="one">200</p>
+                            <p class="one">100</p>
+                            <p class="one">0</p>
+                        </div>
+                        <div class="box4" id="box12"><p class="month1">jan</p></div>
+                        <div class="box4" id="box13"><p class="month2">feb</p></div>
+                        <div class="box4" id="box14"><p class="month3">mar</p></div>
+                        <div class="box4" id="box15"><p class="month4">apr</p></div>
+                        <div class="box4" id="box16"><p class="month5">may</p></div>
+                    </div> 
+                </div>
+            </div> 
+            <img src="../assignment_module-4/quchanmark-icon.png" id="quchanmark">
+        </div> 
+        <p class="trusted">TRUSTED BY OVER <B>10.000+</B> WORLD'S BEST TEAMS</p>
+        <img src="../assignment_module-4/google-icon.png" class="google">
+        <img src="../assignment_module-4/airbnb1-icon.png" class="airbnb">
+        <img src="../assignment_module-4/Facebook-icon.png" class="facebook">
+        <img src="../assignment_module-4/hubspot-icon.png" class="hubspot">
+        <img src="../assignment_module-4/slack-icon.png" class="slack">
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>

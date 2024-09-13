@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.img{
+    background:url(../assignment_module-4/waves\ generator.jpg);
+    height: 100vh;
+    background-size: cover; 
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    
+}
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 90px;
+    font-size: 40px;
+}
+p{
+    color: rgb(255, 0, 0);
+    text-align: center;
+    margin: 300px;
+    margin-left: -370px;
+    font-size: 25px;
+    
+}
+.waves{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    
+}
+.div{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.images{
+    position: absolute;
+    bottom: 50px;
+}
+.img-1,.img-2,.img-3,.img-4,.img-5,.img-6{
+    height: 30px;
+    width: auto;
+    border-radius: 50%;
+    margin: 0px 70px;
+    position: relative;
+    z-index: 1;
+}
+.img-1{
+    bottom: 70px;
+    height: 30px;
+    width: 30px;
+    right: 200px;
+}
+.img-2{
+    bottom: 110px;
+    /* margin-bottom: 40px; */
+    height: 50px;
+    width: 50px;
+    right: 200px;
+}
+.img-3{
+    bottom: 180px;
+    /* margin-bottom: 50px; */
+    right: 120px;
+}
+.img-4{
+    bottom: 150px;
+    height: 35px;
+    width: 35px;
+    right: 50px;
+
+}
+.img-5{
+    bottom: 70px;
+    
+}
+
+
+.images,.h4{
+    color: white;
+    right: 200px;
+    font-size:15px;
+}
