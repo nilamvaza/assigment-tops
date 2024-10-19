@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+ <style>
+    .div1{
+        height: 800px;
+        width: 1000px;
+        border: 2px solid black;
+        background-color: rgb(150, 213, 225);
+        margin: 50px;
+    }
+    .div2{
+        height: 130px;
+        width: 900px;
+        border: 2px solid rgb(255, 255, 255);
+        margin-left: 50px;
+        background-color: white;
+    } 
+    .div3{
+        height: 400px;
+        width: 350px;
+        border: 2px solid rgb(255, 255, 255);
+        background-color: white;
+        padding: 50px;
+        margin: 50px;
+    }
+    .div4{
+        height: 500px;
+        width: 450px;
+        border: 2px solid rgb(255, 255, 255);
+        background-color: white;
+        margin: 504px;
+        margin-top: -554px;
+    }
+    p{
+        margin: 20px;
+    }
+    
+    .name{
+        height: 40px;
+        width: 180px;
+        margin: -30px;
+        margin-top: -40px;
+        margin-right: 20px;
+        border-top-left-radius:5px ;
+        border-top-right-radius: 5px ;
+        border-bottom-left-radius: 5px ;
+        border-bottom-right-radius: 5px;
+        border: 2px solid hsl(0, 5%, 82%);
+    }
+    .company{
+        height: 40px;
+        width: 179px;
+        margin-left: -20px;
+        border-top-left-radius:5px ;
+        border-top-right-radius: 5px ;
+        border-bottom-left-radius: 5px ;
+        border-bottom-right-radius: 5px;
+        border: 2px solid hsl(0, 5%, 82%);
+    }
+    .Email{
+        height: 40px;
+        width: 180px;
+        margin-left: -30px;
+        margin-top: 30px;
+        border-top-left-radius:5px ;
+        border-top-right-radius: 5px ;
+        border-bottom-left-radius: 5px ;
+        border-bottom-right-radius: 5px;
+        border: 2px solid hsl(0, 5%, 82%);
+    }
+    .Mobile{
+        height: 40px;
+        width: 180px;
+        margin-right: -70px;
+        margin-top: -60px;
+        border-top-left-radius:5px ;
+        border-top-right-radius: 5px ;
+        border-bottom-left-radius: 5px ;
+        border-bottom-right-radius: 5px;
+        border: 2px solid hsl(0, 5%, 82%);
+    }
+    
+
+    .message-box {
+        height: 100px;
+        width: 365px;
+        padding: 5px;
+        margin-top: 30px;
+        margin-left: -30px;
+        border: 2px solid hsl(0, 5%, 82%);
+        border-top-left-radius:5px ;
+        border-top-right-radius: 5px ;
+        border-bottom-left-radius: 5px ;
+        border-bottom-right-radius: 5px;
+    }
+    #button{
+        height: 40px;
+        width: 70px;
+        margin-top: 20px;
+        margin-left: -30px;
+        border: 2px solid hsl(0, 83%, 55%);
+        background-color: rgb(255, 0, 0);
+        color: white;
+        border-top-left-radius:5px ;
+        border-top-right-radius: 5px ;
+        border-bottom-left-radius: 5px ;
+        border-bottom-right-radius: 5px;
+    }
+    
+    
+    .map{
+        margin-top: 20px;
+    }
+    #call{
+      margin: 130px;
+      
+    }
+    #email{
+        margin: 106px;
+       
+    }
+    #email1{
+        margin: -146px;
+        margin-left: 330px;
+        color: #548ae8;
+       font-size: 20px;
+    }
+    #location{
+        margin: 110px;
+        margin-top: 20px;
+        margin-top: -30px;
+    }
+    .p1{
+        margin-top: -130px;
+        
+    }
+    .p2{
+        margin-top: -230px;
+    }
+    #facebook{
+        margin-top: 30px;
+    }
+    
+ </style>
+<body>
+    <div class="div1">
+        <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CONTACT US</h4>
+        <div class="div2">
+            <p>ADDRESS:</p>
+            <p class="p1">Saint Marco Street, 6th <i class="fa-solid fa-square-phone" id="call" style="color: #ff0505;">&nbsp;&nbsp; +91 &nbsp; 1234567890 </i><i class="fa-solid fa-location-dot fa-2xl" id="location" style="color: #ff0000;"></i></p>
+            <p class="p2">Floor,Tokyo,Japan,123456.<i class="fa-solid fa-envelope" id="email" style="color: #548ae8;"></i><p id="email1">example@gmail.com</p></p>
+            
+        </div>
+        <div class="div3">
+            <input class="name"  type="text"  placeholder="Name: ">
+            <input class="company"  type="text"  placeholder="company: ">
+            <input class="Email"  type="text"  placeholder="Email: ">
+            <input class="Mobile"  type="text"  placeholder="Mobile: ">
+            <input class="message-box"  type="text" id="todo-input" placeholder="Messege: ">
+            <button type="button" id="button">send</button>
+            
+         
+        </div>
+        
+        <div class="div4">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14687.
+            734743642492!2d72.55596305!3d23.026206950000002!2m3!1f0!2f0!3f0!3m2!1i1024!
+            2i768!4f13.1!5e0!3m2!1sen!2sin!4v1716575189668!5m2!1sen!2sin" 
+            width="440" height="400" style="border:0;" allowfullscreen="" loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <i class="fa-brands fa-square-facebook fa-2xl" id="facebook" style="color: #174dab;"></i>
+            <i class="fa-brands fa-square-twitter fa-2xl" style="color: #72d2df;"></i>
+            <i class="fa-brands fa-linkedin fa-2xl" style="color: #5478b6;"></i>
+            <i class="fa-brands fa-square-github fa-2xl" style="color: #111212;"></i>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
