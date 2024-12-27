@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  background-color: #ff7a7a;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-top: -300px;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 0.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links a:hover {
+  background-color: #4933ed;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    display: none; /* Hidden by default */
+  }
+
+  .nav-links.active {
+    display: flex; /* Show on toggle */
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    
+  }
+
+  .logo {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.content {
+  padding: 1rem;
+}
+
+.page {
+  text-align: center;
+  margin-top: 2rem;
+  color: rgb(0, 0, 0);
+}
